@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAF 33 Sqn</name>
+        <texture>Liveries/RAF33S.png</texture>
+        <texture1>Liveries/RAF33wings.png</texture1>
+      </livery>
+	   <bo105>
+	   <hdr>false</hdr>
+		<als>true</als>
+		</bo105>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.50</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>

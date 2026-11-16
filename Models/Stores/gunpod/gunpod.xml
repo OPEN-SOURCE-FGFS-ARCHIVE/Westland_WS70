@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+
+<path>gunpod.ac</path>
+
+
+ <effect>
+    <inherits-from>Aircraft/Westland_WS70/Models/Effects/reflect-uber</inherits-from> 
+      <object-name>gunpod</object-name>
+   
+  </effect>	
+
+
+</PropertyList>

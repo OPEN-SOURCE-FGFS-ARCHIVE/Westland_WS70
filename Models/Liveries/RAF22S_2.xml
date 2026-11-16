@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAF 22 Sqn SAR</name>
+        <texture>Liveries/RAF22S_2.png</texture>
+        <texture1>Liveries/RAF22Rescuewings.png</texture1>
+      </livery>
+	   <bo105>
+	   <hdr>false</hdr>
+		<als>true</als>
+		</bo105>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.50</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>

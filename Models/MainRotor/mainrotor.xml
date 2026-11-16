@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+		<path>hub.ac</path>
+		
+	<!--  blades -->
+
+<model>
+        <name>blade01</name>
+        <path>blade1.xml</path>
+        <offsets>
+          <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+       <heading-deg>0</heading-deg>
+	  </offsets>
+      
+    </model>	
+		
+<model>
+        <name>blade02</name>
+        <path>blade2.xml</path>
+        <offsets>
+          <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+		 <heading-deg>-90</heading-deg>
+       </offsets>
+
+    </model>
+
+<model>
+        <name>blade03</name>
+        <path>blade3.xml</path>
+        <offsets>
+          <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+		 <heading-deg>180</heading-deg>
+       </offsets>
+
+    </model>	
+
+
+<model>
+        <name>blade04</name>
+        <path>blade4.xml</path>
+        <offsets>
+          <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+		 <heading-deg>90</heading-deg>
+       </offsets>
+
+    </model>
+	
+
+
+<animation>
+<name>rotorscomplete</name>
+ <object-name>hub</object-name>
+   <object-name>blade01</object-name>
+  <object-name>blade02</object-name>
+  <object-name>blade03</object-name>
+   <object-name>blade04</object-name>
+  </animation>
+
+	 <animation>
+        <type>spin</type>
+     <object-name>rotorscomplete</object-name>
+  
+        <property>rotors/main/rpm</property>
+	<factor>1</factor>
+        <center>
+           
+            <x-m> 0.00</x-m>
+            <y-m>-0.00</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+	  
+        </axis>
+    </animation>
+	
+	
+	
+	 
+	
+	
+</PropertyList>
+
+
+

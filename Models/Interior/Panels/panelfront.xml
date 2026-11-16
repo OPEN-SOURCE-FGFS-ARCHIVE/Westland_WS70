@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>100</max-m>
+    </animation>
+
+    <path>panelfront.ac</path>
+
+    <animation>
+        <object-name>panel1</object-name>
+        <object-name>panel2</object-name>
+        <object-name>panel3</object-name>
+        <object-name>panel4</object-name>
+    </animation>
+
+    <!-- compositor based lighting -->
+    <model>
+        <usage>interior</usage>
+        <path>Aircraft/Westland_WS70/Models/Lights/BlueDashLight.xml</path>
+        <offsets>
+            <x-m> 0.26  </x-m>
+            <y-m> -0.60 </y-m>
+            <z-m> 0.05  </z-m>
+            <pitch-deg>-30</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <usage>interior</usage>
+        <path>Aircraft/Westland_WS70/Models/Lights/BlueDashLight.xml</path>
+        <offsets>
+            <x-m> 0.26 </x-m>
+            <y-m> 0.00 </y-m>
+            <z-m> 0.05 </z-m>
+            <pitch-deg>-30</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <usage>interior</usage>
+        <path>Aircraft/Westland_WS70/Models/Lights/BlueDashLight.xml</path>
+        <offsets>
+            <x-m> 0.26 </x-m>
+            <y-m> 0.60 </y-m>
+            <z-m> 0.05 </z-m>
+            <pitch-deg>-30</pitch-deg>
+        </offsets>
+    </model>
+
+</PropertyList>

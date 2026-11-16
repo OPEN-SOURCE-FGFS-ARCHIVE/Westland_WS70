@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>uh60.ac</path>
+  <dump>0</dump>
+
+  
+  <effect>
+    <inherits-from>Aircraft/Westland_WS70/Models/Effects/bumps</inherits-from>
+ 
+	 <object-name>body</object-name>
+     <object-name>fuselage</object-name>
+    <object-name>elevator</object-name>
+    <object-name>caches</object-name>
+    <object-name>axeL1</object-name> 
+    <object-name>axeL2</object-name> 
+    <object-name>axeL3</object-name> 
+    <object-name>roueG</object-name>
+    <object-name>axeR1</object-name> 
+    <object-name>axeR2</object-name> 
+    <object-name>axeR3</object-name> 
+    <object-name>roueD</object-name>
+    <object-name>axeT1</object-name> 
+    <object-name>axeT2</object-name> 
+    <object-name>axeT3</object-name> 
+    <object-name>axeT4</object-name> 
+    <object-name>roueA</object-name>
+    <object-name>doorL</object-name>
+    <object-name>doorR</object-name>
+    <object-name>windowL1</object-name>
+    <object-name>windowL2</object-name>
+    <object-name>windowR1</object-name>
+    <object-name>windowR2</object-name>
+    <object-name>cachetail</object-name>
+    <object-name>rotor</object-name>
+    <object-name>intermoteurs</object-name>
+    <object-name>porteL</object-name>
+    <object-name>porteR</object-name>
+  </effect>
+  
+
+   
+    <effect>
+		<inherits-from>Aircraft/Westland_WS70/Models/Effects/glassout</inherits-from>
+	<object-name>Mesh.029</object-name>
+<object-name>vitres</object-name>
+    <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+<object-name>Mesh.026</object-name>
+</effect>
+
+<animation>
+  <type>select</type>
+<object-name>Mesh.029</object-name>
+<object-name>vitres</object-name>
+    <object-name>vitres</object-name>
+    <object-name>vitreG</object-name>
+    <object-name>vitreD</object-name>
+    <object-name>glaceL</object-name>
+    <object-name>glaceR</object-name>
+    <object-name>glaceL1</object-name>
+    <object-name>glaceL2</object-name>
+    <object-name>glaceR1</object-name>
+    <object-name>glaceR2</object-name>
+<object-name>Mesh.026</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>sim/current-view/internal</property>
+    <value>true</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+  
+
+ 
+</PropertyList>

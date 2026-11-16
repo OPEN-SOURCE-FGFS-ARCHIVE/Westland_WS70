@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Empire Test Pilot School</name>
+        <texture>Liveries/ETPS.png</texture>
+        <texture1>Liveries/ETPSwings.png</texture1>
+      </livery>
+	   <bo105>
+	   <hdr>true</hdr>
+		<als>false</als>
+		</bo105>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.50</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>

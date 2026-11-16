@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>interior.ac</path>
+
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>300</max-m>
+    </animation>
+
+    <animation>
+        <!-- Objets opaques -->
+        <object-name>interieur</object-name>
+
+        <!-- Objets transparents -->
+        <object-name>intvitres</object-name>
+        <object-name>intvitreG</object-name>
+        <object-name>intvitreD</object-name>
+        <object-name>intglaceL</object-name>
+        <object-name>intglaceR</object-name>
+        <object-name>intglaceL1</object-name>
+        <object-name>intglaceL2</object-name>
+        <object-name>intglaceR1</object-name>
+        <object-name>intglaceR2</object-name>
+    </animation>
+
+    <animation>
+        <type>noshadow</type>
+        <object-name>intvitres</object-name>
+        <object-name>intvitreG</object-name>
+        <object-name>intvitreD</object-name>
+        <object-name>intglaceL</object-name>
+        <object-name>intglaceR</object-name>
+        <object-name>intglaceL1</object-name>
+        <object-name>intglaceL2</object-name>
+        <object-name>intglaceR1</object-name>
+        <object-name>intglaceR2</object-name>
+    </animation>
+
+    <effect>
+        <inherits-from>Effects/glass</inherits-from>
+        <object-name>intvitres</object-name>
+        <object-name>intvitreG</object-name>
+        <object-name>intvitreD</object-name>
+        <object-name>intglaceL</object-name>
+        <object-name>intglaceR</object-name>
+        <object-name>intglaceL1</object-name>
+        <object-name>intglaceL2</object-name>
+        <object-name>intglaceR1</object-name>
+        <object-name>intglaceR2</object-name>
+    </effect>
+
+    <animation>
+        <type>select</type>
+        <object-name>intvitres</object-name>
+        <object-name>intvitreG</object-name>
+        <object-name>intvitreD</object-name>
+        <object-name>intglaceL</object-name>
+        <object-name>intglaceR</object-name>
+        <object-name>intglaceL1</object-name>
+        <object-name>intglaceL2</object-name>
+        <object-name>intglaceR1</object-name>
+        <object-name>intglaceR2</object-name>
+        <condition>
+            <equals>
+                <property>sim/current-view/internal</property>
+                <value>true</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <!-- Main panel -->
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/Panels/panelfront.xml</path>
+        <offsets>
+            <x-m> -6.554 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m> -0.746 </z-m>
+            <roll-deg>     0.000 </roll-deg>
+            <pitch-deg>  -30.540 </pitch-deg>
+            <heading-deg>  0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <!-- Centre consol -->
+    <model>
+        <name>Centre</name>
+        <path>Aircraft/Westland_WS70/Models/Interior/Panels/console.xml</path>
+        <offsets>
+            <x-m>-6.46</x-m>
+            <y-m>0.05</y-m>
+            <z-m>-0.977</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>0</heading-deg>
+        </offsets>
+
+    </model>
+
+    <!-- cyclic + Collective -->
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/sticks/cyclic.xml</path>
+        <offsets>
+            <x-m> -6.15 </x-m>
+            <y-m>  0.5700 </y-m>
+            <z-m> -1.4 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/sticks/cyclic.xml</path>
+        <offsets>
+            <x-m> -6.15 </x-m>
+            <y-m>  -0.5700 </y-m>
+            <z-m> -1.4 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/sticks/collective.xml</path>
+        <offsets>
+            <x-m> -5.75 </x-m>
+            <y-m>  0.270 </y-m>
+            <z-m> -1.22 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/sticks/collective.xml</path>
+        <offsets>
+            <x-m> -5.75 </x-m>
+            <y-m>  -0.96 </y-m>
+            <z-m> -1.22 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <!-- front panel instruments -->
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/panel.xml</path>
+        <offsets>
+            <x-m>-6.45</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.795</z-m>
+            <roll-deg>    0 </roll-deg>
+            <pitch-deg>   -27</pitch-deg>
+            <heading-deg> 0 </heading-deg>
+        </offsets>
+    </model>
+
+    <!-- Tableau de bord central -->
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/Panels/paneldown.xml</path>
+        <offsets>
+            <x-m> -6.010 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m> -1.086 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <!-- Tableau de bord plafonnier -->
+    <model>
+        <path>Aircraft/Westland_WS70/Models/Interior/Panels/panelup.xml</path>
+        <offsets>
+            <x-m> -5.833 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m> -0.132 </z-m>
+            <roll-deg>    0.000 </roll-deg>
+            <pitch-deg>   0.000 </pitch-deg>
+            <heading-deg> 0.000 </heading-deg>
+        </offsets>
+    </model>
+
+    <!-- Pilote -->
+    <model>
+        <name>Pilot1</name>
+        <path>Aircraft/Westland_WS70/Models/Pilot/Helipilot4/pilot.xml</path>
+        <offsets>
+            <x-m>-5.95 </x-m>
+            <y-m> 0.58 </y-m>
+            <z-m> -0.9 </z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilot2</name>
+        <path>Aircraft/Westland_WS70/Models/Pilot/Helipilot4/pilot.xml</path>
+        <offsets>
+            <x-m>-5.95 </x-m>
+            <y-m> -0.58 </y-m>
+            <z-m> -0.9 </z-m>
+        </offsets>
+    </model>
+
+    <!-- Pilot invisible internally -->
+    <animation>
+        <type>select</type>
+        <object-name>Pilot1</object-name>
+        <condition>
+            <not>
+                <equals>
+                    <property>sim/current-view/view-number</property>
+                    <value>0</value>
+                </equals>
+            </not>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Pilot1</object-name>
+        <condition>
+            <not>
+                <equals>
+                    <property>sim/current-view/view-number</property>
+                    <value>17</value>
+                </equals>
+            </not>
+        </condition>
+    </animation>
+
+</PropertyList>

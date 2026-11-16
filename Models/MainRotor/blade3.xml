@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+		<path>blade.ac</path>
+		
+		
+		
+<animation>
+	<name>bladecomplete</name>
+      <object-name>blade</object-name>
+     
+       <object-name>blurred1</object-name>
+	 
+     </animation> 
+	 
+	 
+	
+	 
+	
+<!--  REMBRANDT support for transparent objects-->
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+    
+	  <object-name>blurred1</object-name>
+    </effect> 
+
+    <animation>
+	<type>material</type>
+ <object-name>blade</object-name>
+     
+	
+		<transparency>
+			<alpha-prop>rotors/main/rpm</alpha-prop>
+			<factor>-0.0045</factor>
+			<offset>1</offset>
+			<max>1</max>
+		</transparency>
+    </animation>
+
+	
+ <animation>
+        <type>select</type>
+       <object-name>blade</object-name>
+     
+        <condition>
+            <less-than>
+                <property>rotors/main/rpm</property>
+                <value>201</value>
+            </less-than>
+        </condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+    <object-name>blurred1</object-name>
+        <condition>
+            <!--<greater-than>
+                <property>rotors/main/rpm</property>
+                <value>180.999</value>
+            </greater-than>-->
+			
+			
+        <greater-than>
+          <property>rotors/main/rpm</property>
+          <value>180.99</value>
+        </greater-than>
+       
+        </condition>
+    </animation>	
+	
+<!--
+
+ <animation>
+        <type>rotate</type>
+        <object-name>bladecomplete</object-name>
+        <property>rotors/main/blade/position-deg</property>
+	<factor>-1</factor>
+        <center>
+            <x-m>0.7</x-m>
+            <y-m>0</y-m>
+            <z-m>0.845</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+    </animation>
+-->
+    <animation>
+        <type>rotate</type>
+        <object-name>bladecomplete</object-name>
+        <property>rotors/main/blade[2]/incidence-deg</property>
+	<factor>0.3</factor>
+        <center>
+             <x-m>0.7</x-m>
+            <y-m>0</y-m>
+            <z-m>0.845</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+    <animation>
+        <type>rotate</type>
+        <object-name>bladecomplete</object-name>
+       
+        <property>rotors/main/blade[2]/flap-deg</property>
+        <factor>0.2</factor>
+        <center>
+           <x-m>0.7</x-m>
+            <y-m>0</y-m>
+            <z-m>0.845</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+    
+		
+	
+</PropertyList>
+
+
+

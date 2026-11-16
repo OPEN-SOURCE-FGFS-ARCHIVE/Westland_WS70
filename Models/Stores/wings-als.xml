@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<path>wings.ac</path>
+
+<!--
+<effect>
+    <inherits-from>Aircraft/Westland_WS70/Models/Effects/reflect-uber</inherits-from>
+  <object-name>lwing</object-name>
+    <object-name>rwing</object-name>
+    <object-name>lstores</object-name>
+    <object-name>rstores</object-name> 
+  </effect>
+
+-->
+
+</PropertyList>

@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>500</max-m>
+    </animation>
+
+<model>
+		<name>Pylons</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/pylons.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+
+<!-- payloads -->
+
+			
+
+  <model>
+		<name>Troop_Transport</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/seats.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>-0.1 </z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Troop_Transport</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>Troop_Transport</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+ 
+
+  <model>
+		<name>CAS-Hydra</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/hydra.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>CAS-Hydra</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>CAS-Hydra</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+  
+
+  
+  <model>
+		<name>CAS-Hydra+RMP</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/hydragun.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>CAS-Hydra+RMP</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>CAS-Hydra+RMP</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+  
+   <model>
+		<name>CAS-Hydra+NC621</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/hydracannon.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>CAS-Hydra+NC621</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>CAS-Hydra+NC621</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+  
+  
+   <model>
+		<name>CAS-Hydra+NC621+RMP</name>
+		<path>Aircraft/Westland_WS70/Models/Stores/hydracannongun.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>CAS-Hydra+NC621+RMP</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>CAS-Hydra+NC621+RMP</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+ 
+  
+  
+  <animation>
+  <type>select</type>
+<object-name>pylon.C</object-name>  
+  <condition>
+  <or>
+  
+  <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>CAS-Hydra+NC621+RMP</value>
+   </equals>
+   
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>CAS-Hydra</value>
+   </equals>
+   
+     <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>CAS-Hydra+RMP</value>
+   </equals>
+   
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>CAS-Hydra+NC621</value>
+   </equals>
+   
+      <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>Troop_Transport</value>
+   </equals>
+   
+   
+  
+   
+   
+  </or>
+  </condition>
+ </animation>
+
+</PropertyList>

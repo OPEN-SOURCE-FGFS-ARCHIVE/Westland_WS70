@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+    <name>BlueLightRemb</name>
+    <path>Aircraft/Westland_WS70/Models/Lights/Rembrandt/BlueLightInternal-remb.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>BlueLightRemb</object-name>
+    <condition>
+      <and>
+        <property>lightpack/nav-lights-intensity</property>
+        <not><property>sim/crashed</property></not>
+      </and>
+    </condition>
+  </animation>
+
+</PropertyList>
